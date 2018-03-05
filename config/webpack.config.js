@@ -4,7 +4,6 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const VENDOR_LIBS = [
-	"axios",
 	"vue",
 	"vue-router",
 	"vuelidate",
@@ -14,13 +13,10 @@ const VENDOR_LIBS = [
 
 module.exports = {
 	entry: {
-		bundle: './src/main.js',
+		bundle: '@/main.js',
 		vendor: VENDOR_LIBS
 	},
-	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'js/[name].[hash].js'
-	},
+
 	module: {
 		rules: [
 			{
@@ -41,35 +37,33 @@ module.exports = {
 			},
 			{
 				test: /\.js$/,
-				loader: 'buble-loader',
-				exclude: /node_modules/
+				exclude: /node_modules/,
+				use: {
+					loader: "buble-loader",
+				}
 			},
 			{
 				test: /\.(png|jpg|gif|svg)$/,
 				loader: 'file-loader',
 				options: {
-					name: 'assets/[name].[ext]?[hash]'
+					name: 'assets/images/[name].[ext]?[hash]'
 				}
 			}
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("css/style.css"),
+		new ExtractTextPlugin("assets/css/style.css"),
 		new webpack.optimize.CommonsChunkPlugin({
 			names: ["vendor", "manifest"]
 		}),
 		new HtmlWebpackPlugin({
 			template: "index.html"
-		}),
-		new webpack.DefinePlugin({
-			'process.env': {
-				NODE_ENV: '"production"'
-			}
 		})
 	],
 	resolve: {
 		alias: {
-			'vue$': 'vue/dist/vue.esm.js'
+			'vue$': 'vue/dist/vue.esm.js',
+			'@': path.resolve(__dirname, "..", "src")
 		},
 		extensions: ['*', '.js', '.vue', '.json']
 	},
@@ -83,19 +77,3 @@ module.exports = {
 	},
 	devtool: '#eval-source-map'
 };
-
-if (process.env.NODE_ENV === 'production') {
-	module.exports.devtool = '#source-map'
-	// http://vue-loader.vuejs.org/en/workflow/production.html
-	module.exports.plugins = (module.exports.plugins || []).concat([
-		new webpack.optimize.UglifyJsPlugin({
-			sourceMap: true,
-			compress: {
-				warnings: false
-			}
-		}),
-		new webpack.LoaderOptionsPlugin({
-			minimize: true
-		})
-	])
-}
