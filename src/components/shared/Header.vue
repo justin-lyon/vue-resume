@@ -18,7 +18,7 @@
 				to="/"
 				exact
 				color="primary">
-				Justin Lyon
+				Home
 			</v-btn>
 		</v-toolbar-items>
 
@@ -41,11 +41,10 @@ export default {
 		return {
 			links: [
 				{ label: "Resume", to: "/resume" },
-				{ label: "LinkedIn", href: "//www.linkedin.com/in/justin-lyon" },
-				{ label: "GitHub", href: "//github.com/jlyon87" },
+				{ label: "LinkedIn", href: "https://www.linkedin.com/in/justin-lyon" },
+				{ label: "GitHub", href: "https://github.com/jlyon87" },
 			]
 		};
 	}
 }
 </script>
-

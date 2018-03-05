@@ -1,11 +1,11 @@
 <template>
-	<v-card>
+	<v-card to="/experience" >
 		<v-card-media height="150px" :src="image"></v-card-media>
 		<v-card-title primary-title>
 			<div>
 				<h3>Experience</h3>
 				<div>
-					Put my experience here
+					Justin's job history.
 				</div>
 			</div>
 		</v-card-title>

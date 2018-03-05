@@ -52,13 +52,13 @@
 </template>
 
 <script>
-import Summary from "./cards/Summary";
-import Certifications from "./cards/Certifications";
-import Education from "./cards/Education";
-import Experience from "./cards/Experience";
-import Interests from "./cards/Interests";
-import Projects from "./cards/Projects";
-import Skills from "./cards/Skills";
+import Summary from "./home-cards/Summary";
+import Certifications from "./home-cards/Certifications";
+import Education from "./home-cards/Education";
+import Experience from "./home-cards/Experience";
+import Interests from "./home-cards/Interests";
+import Projects from "./home-cards/Projects";
+import Skills from "./home-cards/Skills";
 
 export default {
 	components: {
@@ -72,7 +72,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-.stuff { background-color: red; }
-</style>
