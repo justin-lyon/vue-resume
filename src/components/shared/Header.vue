@@ -1,5 +1,5 @@
 <template>
-	<v-toolbar app >
+	<v-toolbar app fixed dense >
 		<v-menu :nudge-width="100">
 			<v-toolbar-title slot="activator">
 				<span></span>

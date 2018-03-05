@@ -43,10 +43,10 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(png|jpg|gif|svg)$/,
+				test: /\.(png|jpg|jpeg|gif|svg)$/,
 				loader: 'file-loader',
 				options: {
-					name: 'assets/images/[name].[ext]?[hash]'
+					name: 'assets/images/[name].[ext]'
 				}
 			}
 		]
