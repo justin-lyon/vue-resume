@@ -37,8 +37,8 @@ export default {
 			summary: "In no particular order, these are personal projects that Justin has developed. Check him out on GitHub as well.",
 			projects: [
 				{
-					name: "justin.codes",
-					image: "spinning.jpeg", stack: "Node JS",
+					name: "lyon.codes",
+					image: "spinning.jpeg", stack: "Static Webpage",
 					summary: "The resume page you are viewing right now!",
 					description: "Mr. Lyon built this static webpage for his resume.",
 					technologies: [
@@ -52,7 +52,7 @@ export default {
 				},
 				{
 					name: "eve-companion", link: "https://eve-companion.in",
-					image: "eve-online.png", stack: "Node JS",
+					image: "eve-online.png", stack: "Node Stack",
 					summary: "A third party tool for managing characters in EVE Online.",
 					description: "Mr. Lyon developed eve-companion as a third party app to manage characters in EVE Online. This app maintains sessions for authenticated users and allows a user to add their characters through EVE Online's Rest API (ESI). Connections between the app and ESI are performed using OAuth. The app uses Bitbucket Pipelines for Continous Integration to an Ubuntu server using Nginx as the web server.",
 					technologies: [
