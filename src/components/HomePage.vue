@@ -25,7 +25,7 @@ import HomeSection from "./cards/HomeSection";
 export default {
 	data() {
 		return {
-			title: "Welcome to Justin Lyon's Resume page!",
+			title: "Welcome to Justin Lyon's resume page!",
 			summary: "Mr. Lyon is currently employed as a Senior Technical Consultant I at Acumen Solutions. He acts in the roles of Lead Developer, Deployment Manager, Code Reviewer, and New Hire Trainer. He is an early adopter of Salesforce Lightning. Justin is looking for opportunities in Web Development where he can utilize his expertise in Javascript.",
 			sections: [
 				{
