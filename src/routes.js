@@ -1,6 +1,6 @@
 import VueRouter from "vue-router";
 import Home from "./components/HomePage";
-import Experience from "./components/sections/Experience";
+import ExperiencePage from "./components/ExperiencePage";
 
 const routes = [
 	{
@@ -9,7 +9,7 @@ const routes = [
 	},
 	{
 		path: "/experience",
-		component: Experience
+		component: ExperiencePage
 	},
 	{
 		path: "*",

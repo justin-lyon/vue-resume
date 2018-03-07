@@ -3,7 +3,8 @@
 		<v-layout row wrap>
 			<v-flex
 				xs10 offset-xs1
-				md8 offset-md2>
+				md8 offset-md2
+				lg6 offset-lg3 >
 
 				<app-summary></app-summary>
 
@@ -11,38 +12,17 @@
 
 			<v-flex
 				xs10 offset-xs1
-				md4 offset-md2>
+				md8 offset-md2
+				lg6 offset-lg3>
 
 				<v-layout row wrap>
-					<v-flex xs12>
-						<app-experience></app-experience>
-					</v-flex>
-
-					<v-flex xs12>
-						<app-projects></app-projects>
-					</v-flex>
-
-					<v-flex xs12>
-						<app-certifications></app-certifications>
-					</v-flex>
-				</v-layout>
-			</v-flex>
-
-			<v-flex
-				xs10 offset-xs1
-				md4 offset-md0 >
-
-				<v-layout row wrap>
-					<v-flex xs12>
-						<app-education></app-education>
-					</v-flex>
-
-					<v-flex xs12>
-						<app-skills></app-skills>
-					</v-flex>
-
-					<v-flex xs12>
-						<app-interests></app-interests>
+					<v-flex v-for="section in sections" :key="section.title"
+						xs12 md6 lg4 >
+						<app-section
+							:title="section.title"
+							:summary="section.summary"
+							:image="section.image"
+							:to="section.to" ></app-section>
 					</v-flex>
 				</v-layout>
 
@@ -52,23 +32,25 @@
 </template>
 
 <script>
-import Summary from "./home-cards/Summary";
-import Certifications from "./home-cards/Certifications";
-import Education from "./home-cards/Education";
-import Experience from "./home-cards/Experience";
-import Interests from "./home-cards/Interests";
-import Projects from "./home-cards/Projects";
-import Skills from "./home-cards/Skills";
+import Summary from "./cards/Summary";
+import HomeSection from "./cards/HomeSection";
 
 export default {
+	data() {
+		return {
+			sections: [
+				{ title: "Experience", summary: "Justin's Job History.", image: "spinning.jpeg", to: "/experience" },
+				{ title: "Education", summary: "Talk about education.", image: "classroom.jpeg", to: "/" },
+				{ title: "Projects", summary: "Talk about some projects.", image: "sublimetext.png", to: "/" },
+				{ title: "Skills", summary: "Highlight some skills.", image: "data.jpeg", to: "/" },
+				{ title: "Certifications", summary: "Talk about some certifications.", image: "expert.jpg", to: "/" },
+				{ title: "Interests", summary: "Just is interested in stuff.", image: "soccer.jpeg", to: "/" }
+			]
+		};
+	},
 	components: {
 		appSummary: Summary,
-		appCertifications: Certifications,
-		appEducation: Education,
-		appExperience: Experience,
-		appInterests: Interests,
-		appProjects: Projects,
-		appSkills: Skills
+		appSection: HomeSection
 	}
 }
 </script>
