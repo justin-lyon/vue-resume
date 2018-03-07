@@ -7,9 +7,9 @@
 			<div>
 				<h3>{{ name }}</h3>
 				<div>
-					<div v-if="major">Major: {{ major }}</div>
-					<div v-if="minor">Minor: {{ minor }}</div>
-					<p><i>{{ date }}</i></p>
+					<div v-if="major">Major, {{ major }}</div>
+					<div v-if="minor">Minor, {{ minor }}</div>
+					<p><i>Graduated {{ date }}</i></p>
 				</div>
 			</div>
 		</v-card-title>
