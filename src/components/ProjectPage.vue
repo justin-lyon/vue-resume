@@ -37,6 +37,20 @@ export default {
 			summary: "These are personal projects that Justin has developed. Ordered by complexity. Check him out on GitHub as well.",
 			projects: [
 				{
+					name: "justin.codes",
+					image: "spinning.jpeg", stack: "Node JS",
+					summary: "A resume page built using Vue JS.",
+					description: "Mr. Lyon built this static webpage for his resume.",
+					technologies: [
+						{ name: "Vue JS", link: "https://vuejs.org/" },
+						{ name: "Webpack", link: "https://webpack.js.org/" },
+						{ name: "Bitbucket Pipelines", link: "https://bitbucket.org/product/features/pipelines" },
+						{ name: "nginx", link: "https://www.nginx.com/" },
+						{ name: "Ubuntu 16.04", link: "https://www.digitalocean.com/products/droplets/" },
+						{ name: "SSL", link: "https://letsencrypt.org//" }
+					]
+				},
+				{
 					name: "eve-companion", link: "https://eve-companion.in",
 					image: "eve-online.png", stack: "Node JS",
 					summary: "A third party tool for managing characters in EVE Online.",
@@ -46,15 +60,40 @@ export default {
 						{ name: "Webpack", link: "https://webpack.js.org/" },
 						{ name: "RethinkDB", link: "https://www.rethinkdb.com/" },
 						{ name: "express-session", link: "https://github.com/expressjs/session" },
+						{ name: "EVE Swagger Interface", link: "https://esi.tech.ccp.is/ui/" },
 						{ name: "OAuth", link: "https://en.wikipedia.org/wiki/OAuth" },
 						{ name: "Bitbucket Pipelines", link: "https://bitbucket.org/product/features/pipelines" },
 						{ name: "nginx", link: "https://www.nginx.com/" },
-						{ name: "Ubuntu 16.04", link: "https://www.digitalocean.com/products/droplets/" }
+						{ name: "Ubuntu 16.04", link: "https://www.digitalocean.com/products/droplets/" },
+						{ name: "SSL", link: "https://letsencrypt.org//" },
+					]
+				},
+				{
+					name: "FMT-Starter-Kit", link: "https://github.com/jlyon87/FMT-Starter-Kit",
+					image: "force.png", stack: "Salesforce",
+					summary: "A scaffold for starting out with Salesforce ant deployments.",
+					description: "This project is a quick start to run custom Salesforce deployments using the Force.com Migration Tool, and ant.",
+					technologies: [
+						{ name: "Salesforce", link: "https://www.salesforce.com/" },
+						{ name: "Force.com Migration Tool", link: "https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm" },
+						{ name: "ant", link: "https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_prereq.htm" },
+					]
+				},
+				{
+					name: "lightning-kit", link: "https://github.com/jlyon87/lightning-kit",
+					image: "force.png", stack: "Salesforce",
+					summary: "A javascript static resource developer kit for Salesforce Lightning.",
+					description: "This kit contains some basic helpers for developing in Salesforce Lightning.",
+					technologies: [
+						{ name: "Salesforce", link: "https://www.salesforce.com/" },
+						{ name: "Static Resource", link: "https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_resources.htm" },
+						{ name: "Salesforce Lightning", link: "https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm" },
 					]
 				}
 			]
 		};
 	},
+
 	components: {
 		appContainer: Container,
 		appPageHeader: PageHeader,

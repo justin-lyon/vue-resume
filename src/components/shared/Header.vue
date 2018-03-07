@@ -7,7 +7,7 @@
 			</v-toolbar-title>
 
 			<v-list>
-				<v-list-tile v-for="link in links" :key="link.label" :href="link.href" :to="link.to" >
+				<v-list-tile v-for="link in links" :key="link.label" :href="link.href" target="_blank" :to="link.to" >
 					<v-list-tile-title>{{ link.label }}</v-list-tile-title>
 				</v-list-tile>
 			</v-list>
@@ -28,6 +28,7 @@
 			<v-btn v-for="link in links"
 				:key="link.label"
 				:href="link.href"
+				target="_blank"
 				:to="link.to"
 				flat>{{ link.label }}</v-btn>
 		</v-toolbar-items>
@@ -40,7 +41,6 @@ export default {
 	data() {
 		return {
 			links: [
-				{ label: "Resume", to: "/resume" },
 				{ label: "LinkedIn", href: "https://www.linkedin.com/in/justin-lyon" },
 				{ label: "GitHub", href: "https://github.com/jlyon87" },
 			]

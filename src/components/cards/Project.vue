@@ -1,6 +1,6 @@
 <template>
 	<v-card>
-		<v-card-actions>
+		<v-card-actions v-if="link">
 			<v-spacer></v-spacer>
 			<a :href="link" target="_blank"><i class="material-icons">launch</i></a>
 		</v-card-actions>
