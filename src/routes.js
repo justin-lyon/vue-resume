@@ -2,6 +2,7 @@ import VueRouter from "vue-router";
 import Home from "./components/HomePage";
 import ExperiencePage from "./components/ExperiencePage";
 import EducationPage from "./components/EducationPage";
+import ProjectPage from "./components/ProjectPage";
 
 const routes = [
 	{
@@ -15,6 +16,10 @@ const routes = [
 	{
 		path: "/education",
 		component: EducationPage
+	},
+	{
+		path: "/project",
+		component: ProjectPage
 	},
 	{
 		path: "*",

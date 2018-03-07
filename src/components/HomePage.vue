@@ -33,23 +33,23 @@ export default {
 					image: "spinning.jpeg", to: "/experience"
 				},
 				{
-					title: "Education", summary: "Talk about education.",
+					title: "Education", summary: "We are... Penn State!",
 					image: "classroom.jpeg", to: "/education"
 				},
 				{
-					title: "Projects", summary: "Talk about some projects.",
-					image: "sublimetext.png", to: "/"
+					title: "Projects", summary: "Personal Projects Justin has developed.",
+					image: "sublimetext.png", to: "/project"
 				},
 				{
-					title: "Skills", summary: "Highlight some skills.",
+					title: "Skills", summary: "Technologies he's comfortable with.",
 					image: "data.jpeg", to: "/"
 				},
 				{
-					title: "Certifications", summary: "Talk about some certifications.",
+					title: "Certifications", summary: "Certificates Justin has earned.",
 					image: "expert.jpg", to: "/"
 				},
 				{
-					title: "Interests", summary: "Just is interested in stuff.",
+					title: "Interests", summary: "Justin is interested in stuff.",
 					image: "soccer.jpeg", to: "/"
 				}
 			]

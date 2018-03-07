@@ -1,5 +1,5 @@
 <template>
-	<v-card color="primary" dark>
+	<v-card color="indigo" dark>
 		<v-card-title primary-title>
 			<div>
 				<h3>{{ title }}</h3>

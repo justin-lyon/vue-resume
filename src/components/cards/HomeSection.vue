@@ -1,5 +1,5 @@
 <template>
-	<v-card :to="to" >
+	<v-card :to="to" exact >
 		<v-card-media height="150px"
 			:src="image"
 			:alt="image"></v-card-media>
