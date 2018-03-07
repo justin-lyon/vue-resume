@@ -5,10 +5,11 @@
 				:src="'assets/images/' + imageName"
 				:alt="imageName">
 			<div>
-				<h3>{{ company }}</h3>
+				<h3>{{ name }}</h3>
 				<div>
-					{{ title }}
-					<p><i>{{ duration }}</i></p>
+					<div v-if="major">Major: {{ major }}</div>
+					<div v-if="minor">Minor: {{ minor }}</div>
+					<p><i>{{ date }}</i></p>
 				</div>
 			</div>
 		</v-card-title>
@@ -26,13 +27,16 @@
 <script>
 export default {
 	props: {
-		company: {
+		name: {
 			type: String
 		},
-		title: {
+		major: {
 			type: String
 		},
-		duration: {
+		minor: {
+			type: String
+		},
+		date: {
 			type: String
 		},
 		imageName: {

@@ -1,50 +1,38 @@
 <template>
-	<v-container fluid grid-list-md>
+	<app-container>
+
 		<v-layout row wrap>
-			<v-flex
-				xs10 offset-xs1
-				md8 offset-md2>
+			<v-flex xs12>
+				<app-page-header
+					:title="title"
+					:summary="summary" ></app-page-header>
+			</v-flex>
 
-				<v-card >
-					<v-card-title primary-title>
-						<div>
-							<h3>Experience</h3>
-						</div>
-					</v-card-title>
+			<v-flex v-for="job in jobs" :key="job.company"
+				xs12>
 
-					<v-card-text>
-						<div>
-							After graduating from university, Justin spent four years abroad - teaching English in South Korea.
-							Today he works as a Senior Developer, building and maintaining applications on the Salesforce Platform.
-						</div>
-					</v-card-text>
-				</v-card>
-
-				<v-layout row wrap>
-					<v-flex v-for="job in jobs" :key="job.company"
-						xs12>
-
-						<app-job
-							:company="job.company"
-							:title="job.title"
-							:duration="job.duration"
-							:image="job.image"
-							:description="job.description" ></app-job>
-
-					</v-flex>
-				</v-layout>
+				<app-job
+					:company="job.company"
+					:title="job.title"
+					:duration="job.duration"
+					:imageName="job.image"
+					:description="job.description" ></app-job>
 
 			</v-flex>
 		</v-layout>
-	</v-container>
+	</app-container>
 </template>
 
 <script>
+import Container from "./layouts/Container";
+import PageHeader from "./shared/PageHeader";
 import Job from "./cards/Job";
 
 export default {
 	data() {
 		return {
+			title: "Experience",
+			summary: "After graduating from university, Justin spent four years abroad - teaching English in South Korea. Today he works as a Senior Developer, building and maintaining applications on the Salesforce Platform.",
 			jobs: [
 				{
 					company: "Acumen Solutions", title: "Senior Technical Consultant I",
@@ -70,6 +58,8 @@ export default {
 		};
 	},
 	components: {
+		appContainer: Container,
+		appPageHeader: PageHeader,
 		appJob: Job
 	}
 }
