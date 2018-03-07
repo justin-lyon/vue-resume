@@ -6,8 +6,22 @@
 				md8 offset-md2
 				lg6 offset-lg3 >
 
-				<app-summary></app-summary>
+				<v-card>
+					<v-card-title primary-title>
+						<div>
+							<h3>Summary</h3>
+						</div>
+					</v-card-title>
 
+					<v-card-text>
+						<p>
+							Mr. Lyon is currently employed as a Senior Technical Consultant I at Acumen Solutions.
+							He acts in the roles of Lead Developer, Deployment Manager, Code Reviewer, and New Hire Trainer.
+							He is an early adopter of Salesforce Lightning.
+							Justin is looking for opportunities in Web Development where he can utilize his expertise in Javascript.
+						</p>
+					</v-card-text>
+				</v-card>
 			</v-flex>
 
 			<v-flex
@@ -32,24 +46,40 @@
 </template>
 
 <script>
-import Summary from "./cards/Summary";
 import HomeSection from "./cards/HomeSection";
 
 export default {
 	data() {
 		return {
 			sections: [
-				{ title: "Experience", summary: "Justin's Job History.", image: "spinning.jpeg", to: "/experience" },
-				{ title: "Education", summary: "Talk about education.", image: "classroom.jpeg", to: "/" },
-				{ title: "Projects", summary: "Talk about some projects.", image: "sublimetext.png", to: "/" },
-				{ title: "Skills", summary: "Highlight some skills.", image: "data.jpeg", to: "/" },
-				{ title: "Certifications", summary: "Talk about some certifications.", image: "expert.jpg", to: "/" },
-				{ title: "Interests", summary: "Just is interested in stuff.", image: "soccer.jpeg", to: "/" }
+				{
+					title: "Experience", summary: "Justin's Job History.",
+					image: "spinning.jpeg", to: "/experience"
+				},
+				{
+					title: "Education", summary: "Talk about education.",
+					image: "classroom.jpeg", to: "/"
+				},
+				{
+					title: "Projects", summary: "Talk about some projects.",
+					image: "sublimetext.png", to: "/"
+				},
+				{
+					title: "Skills", summary: "Highlight some skills.",
+					image: "data.jpeg", to: "/"
+				},
+				{
+					title: "Certifications", summary: "Talk about some certifications.",
+					image: "expert.jpg", to: "/"
+				},
+				{
+					title: "Interests", summary: "Just is interested in stuff.",
+					image: "soccer.jpeg", to: "/"
+				}
 			]
 		};
 	},
 	components: {
-		appSummary: Summary,
 		appSection: HomeSection
 	}
 }
