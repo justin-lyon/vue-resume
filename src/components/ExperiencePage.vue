@@ -32,7 +32,7 @@ export default {
 	data() {
 		return {
 			title: "Experience",
-			summary: "After graduating from university, Justin spent four years abroad - teaching English in South Korea. Today he works as a Senior Developer, building and maintaining applications on the Salesforce Platform.",
+			summary: "After graduating from university, Justin spent four years abroad - teaching English in South Korea. Today he works as a Senior Developer, building and enhancing applications on the Salesforce Platform.",
 			jobs: [
 				{
 					company: "Acumen Solutions", title: "Senior Technical Consultant I",

@@ -34,12 +34,12 @@ export default {
 	data() {
 		return {
 			title: "Projects",
-			summary: "These are personal projects that Justin has developed. Ordered by complexity. Check him out on GitHub as well.",
+			summary: "In no particular order, these are personal projects that Justin has developed. Check him out on GitHub as well.",
 			projects: [
 				{
 					name: "justin.codes",
 					image: "spinning.jpeg", stack: "Node JS",
-					summary: "A resume page built using Vue JS.",
+					summary: "The resume page you are viewing right now!",
 					description: "Mr. Lyon built this static webpage for his resume.",
 					technologies: [
 						{ name: "Vue JS", link: "https://vuejs.org/" },
@@ -87,6 +87,16 @@ export default {
 					technologies: [
 						{ name: "Salesforce", link: "https://www.salesforce.com/" },
 						{ name: "Static Resource", link: "https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_resources.htm" },
+						{ name: "Salesforce Lightning", link: "https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm" },
+					]
+				},
+				{
+					name: "Lightning-Training", link: "https://github.com/jlyon87/Lightning-Training",
+					image: "force.png", stack: "Salesforce",
+					summary: "A repository of training materials for Salesforce Lightning Framework.",
+					description: "Learn how to develop custom Lightning Components for Salesforce Lightning Experience.",
+					technologies: [
+						{ name: "Salesforce", link: "https://www.salesforce.com/" },
 						{ name: "Salesforce Lightning", link: "https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm" },
 					]
 				}
