@@ -37,7 +37,7 @@ export default {
 			summary: "In no particular order, these are personal projects that Justin has developed. Check him out on GitHub as well.",
 			projects: [
 				{
-					name: "lyon.codes",
+					name: "jlyon87.github.io",
 					image: "spinning.jpeg", stack: "Static Webpage",
 					summary: "The resume page you are viewing right now!",
 					description: "Mr. Lyon built this static webpage for his resume.",
