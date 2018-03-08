@@ -43,6 +43,7 @@ export default {
 					description: "Mr. Lyon built this static webpage for his resume.",
 					technologies: [
 						{ name: "Vue JS", link: "https://vuejs.org/" },
+						{ name: "Material Design Components", link: "https://vuetifyjs.com/en/" },
 						{ name: "Webpack", link: "https://webpack.js.org/" },
 						{ name: "Bitbucket Pipelines", link: "https://bitbucket.org/product/features/pipelines" },
 						{ name: "nginx", link: "https://www.nginx.com/" },
@@ -57,8 +58,10 @@ export default {
 					description: "Mr. Lyon developed eve-companion as a third party app to manage characters in EVE Online. This app maintains sessions for authenticated users and allows a user to add their characters through EVE Online's Rest API (ESI). Connections between the app and ESI are performed using OAuth. The app uses Bitbucket Pipelines for Continous Integration to an Ubuntu server using Nginx as the web server.",
 					technologies: [
 						{ name: "Vue JS", link: "https://vuejs.org/" },
+						{ name: "Material Design Components", link: "https://vuetifyjs.com/en/" },
 						{ name: "Webpack", link: "https://webpack.js.org/" },
 						{ name: "RethinkDB", link: "https://www.rethinkdb.com/" },
+						{ name: "express", link: "https://www.npmjs.com/package/express" },
 						{ name: "express-session", link: "https://github.com/expressjs/session" },
 						{ name: "EVE Swagger Interface", link: "https://esi.tech.ccp.is/ui/" },
 						{ name: "OAuth", link: "https://en.wikipedia.org/wiki/OAuth" },
