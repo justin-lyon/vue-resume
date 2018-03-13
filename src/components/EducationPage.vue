@@ -1,32 +1,28 @@
 <template>
-	<app-container>
+	<v-layout row wrap>
+		<v-flex xs12>
+			<app-page-header
+				:title="title"
+				:summary="summary" ></app-page-header>
+		</v-flex>
 
-		<v-layout row wrap>
-			<v-flex xs12>
-				<app-page-header
-					:title="title"
-					:summary="summary" ></app-page-header>
-			</v-flex>
+		<v-flex v-for="school in schools" :key="school.name"
+			xs12>
 
-			<v-flex v-for="school in schools" :key="school.name"
-				xs12>
+			<app-school
+				:name="school.name"
+				:date="school.date"
+				:imageName="school.image"
+				:major="school.major"
+				:minor="school.minor"
+				:description="school.description"
+					></app-school>
 
-				<app-school
-					:name="school.name"
-					:date="school.date"
-					:imageName="school.image"
-					:major="school.major"
-					:minor="school.minor"
-					:description="school.description"
-					 ></app-school>
-
-			</v-flex>
-		</v-layout>
-	</app-container>
+		</v-flex>
+	</v-layout>
 </template>
 
 <script>
-import Container from "./layouts/Container";
 import School from "./cards/School";
 import PageHeader from "./shared/PageHeader";
 
@@ -45,7 +41,6 @@ export default {
 		};
 	},
 	components: {
-		appContainer: Container,
 		appSchool: School,
 		appPageHeader: PageHeader
 	}

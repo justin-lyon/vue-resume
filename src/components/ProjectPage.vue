@@ -1,32 +1,28 @@
 <template>
-	<app-container>
+	<v-layout row wrap>
+		<v-flex xs12>
+			<app-page-header
+				:title="title"
+				:summary="summary" ></app-page-header>
+		</v-flex>
 
-		<v-layout row wrap>
-			<v-flex xs12>
-				<app-page-header
-					:title="title"
-					:summary="summary" ></app-page-header>
-			</v-flex>
+		<v-flex v-for="project in projects" :key="project.name"
+			xs12>
 
-			<v-flex v-for="project in projects" :key="project.name"
-				xs12>
+			<app-project
+				:name="project.name"
+				:link="project.link"
+				:imageName="project.image"
+				:stack="project.stack"
+				:summary="project.summary"
+				:description="project.description"
+				:technologies="project.technologies" ></app-project>
 
-				<app-project
-					:name="project.name"
-					:link="project.link"
-					:imageName="project.image"
-					:stack="project.stack"
-					:summary="project.summary"
-					:description="project.description"
-					:technologies="project.technologies" ></app-project>
-
-			</v-flex>
-		</v-layout>
-	</app-container>
+		</v-flex>
+	</v-layout>
 </template>
 
 <script>
-import Container from "./layouts/Container";
 import Project from "./cards/Project";
 import PageHeader from "./shared/PageHeader";
 
@@ -108,7 +104,6 @@ export default {
 	},
 
 	components: {
-		appContainer: Container,
 		appPageHeader: PageHeader,
 		appProject: Project
 	}

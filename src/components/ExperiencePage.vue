@@ -1,30 +1,26 @@
 <template>
-	<app-container>
+	<v-layout row wrap>
+		<v-flex xs12>
+			<app-page-header
+				:title="title"
+				:summary="summary" ></app-page-header>
+		</v-flex>
 
-		<v-layout row wrap>
-			<v-flex xs12>
-				<app-page-header
-					:title="title"
-					:summary="summary" ></app-page-header>
-			</v-flex>
+		<v-flex v-for="job in jobs" :key="job.company"
+			xs12>
 
-			<v-flex v-for="job in jobs" :key="job.company"
-				xs12>
+			<app-job
+				:company="job.company"
+				:title="job.title"
+				:duration="job.duration"
+				:imageName="job.image"
+				:description="job.description" ></app-job>
 
-				<app-job
-					:company="job.company"
-					:title="job.title"
-					:duration="job.duration"
-					:imageName="job.image"
-					:description="job.description" ></app-job>
-
-			</v-flex>
-		</v-layout>
-	</app-container>
+		</v-flex>
+	</v-layout>
 </template>
 
 <script>
-import Container from "./layouts/Container";
 import PageHeader from "./shared/PageHeader";
 import Job from "./cards/Job";
 
@@ -58,7 +54,6 @@ export default {
 		};
 	},
 	components: {
-		appContainer: Container,
 		appPageHeader: PageHeader,
 		appJob: Job
 	}

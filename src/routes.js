@@ -3,6 +3,7 @@ import Home from "./components/HomePage";
 import ExperiencePage from "./components/ExperiencePage";
 import EducationPage from "./components/EducationPage";
 import ProjectPage from "./components/ProjectPage";
+import SkillsPage from "./components/SkillsPage";
 
 const routes = [
 	{
@@ -20,6 +21,10 @@ const routes = [
 	{
 		path: "/project",
 		component: ProjectPage
+	},
+	{
+		path: "/skills",
+		component: SkillsPage
 	},
 	{
 		path: "*",
