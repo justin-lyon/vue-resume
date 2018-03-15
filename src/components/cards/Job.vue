@@ -19,7 +19,6 @@
 				{{ description }}
 			</p>
 		</v-card-text>
-
 	</v-card>
 </template>
 

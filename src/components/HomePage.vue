@@ -48,7 +48,7 @@ export default {
 				},
 				{
 					title: "Certifications", summary: "Certificates Justin has earned.",
-					image: "expert.jpg", to: "/"
+					image: "expert.jpg", to: "/certifications"
 				},
 				{
 					title: "Interests", summary: "Justin is interested in stuff.",

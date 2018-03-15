@@ -4,6 +4,7 @@ import ExperiencePage from "./components/ExperiencePage";
 import EducationPage from "./components/EducationPage";
 import ProjectPage from "./components/ProjectPage";
 import SkillsPage from "./components/SkillsPage";
+import CertificationsPage from "./components/CertificationsPage";
 
 const routes = [
 	{
@@ -25,6 +26,10 @@ const routes = [
 	{
 		path: "/skills",
 		component: SkillsPage
+	},
+	{
+		path: "/certifications",
+		component: CertificationsPage
 	},
 	{
 		path: "*",

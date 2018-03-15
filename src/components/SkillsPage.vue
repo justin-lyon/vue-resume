@@ -58,8 +58,6 @@ export default {
 					description: "His web server runs on Ubuntu 16.04." },
 				{ name: "Vue JS", mastery: "",
 					description: "This is his JS SPA Framework of Choice. Though he can be dangerous with Angular and React as well." },
-				{ name: "Work in Progress", mastery: "",
-					description: "..." },
 			]
 		};
 	},
