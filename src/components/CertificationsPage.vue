@@ -6,6 +6,19 @@
 				:summary="summary" ></app-page-header>
 		</v-flex>
 
+		<!-- <v-flex xs12 >
+			<v-card>
+				<v-card-actions>
+					<v-spacer></v-spacer>
+					<h4>Verify my Salesforce Certs</h4>
+					<a :href="link" target="_blank" class="cert-link">
+						<v-icon color="primary">launch</v-icon>
+					</a>
+					<v-spacer></v-spacer>
+				</v-card-actions>
+			</v-card>
+		</v-flex> -->
+
 		<v-flex v-for="cert in certifications" :key="cert.name"
 			xs12 md6 lg4 >
 
@@ -24,7 +37,7 @@ export default {
 		return {
 			title: "Certifications",
 			summary: "Justin has earned three Salesforce certifications.",
-			link: "",
+			link: "http://certification.salesforce.com/certification-detail-print?conId=003G0000025uu3HIAQ",
 			certifications: [
 				{ name: "Salesforce Certified Platform App Builder",
 					date: "Mar 2017 - Present",
@@ -45,3 +58,9 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+.cert-link {
+	text-decoration: none;
+}
+</style>

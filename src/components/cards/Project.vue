@@ -2,7 +2,9 @@
 	<v-card>
 		<v-card-actions v-if="link">
 			<v-spacer></v-spacer>
-			<a :href="link" target="_blank"><i class="material-icons">launch</i></a>
+			<a :href="link" target="_blank" class="project-link">
+				<v-icon color="primary">launch</v-icon>
+			</a>
 		</v-card-actions>
 
 		<v-card-title primary-title>
@@ -71,6 +73,10 @@ export default {
 <style scoped>
 img {
 	max-width: 100px;
+}
+
+.project-link {
+	text-decoration: none;
 }
 
 ul {
