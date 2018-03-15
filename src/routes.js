@@ -5,6 +5,7 @@ import EducationPage from "./components/EducationPage";
 import ProjectPage from "./components/ProjectPage";
 import SkillsPage from "./components/SkillsPage";
 import CertificationsPage from "./components/CertificationsPage";
+import InterestsPage from "./components/InterestsPage";
 
 const routes = [
 	{
@@ -30,6 +31,10 @@ const routes = [
 	{
 		path: "/certifications",
 		component: CertificationsPage
+	},
+	{
+		path: "/interests",
+		component: InterestsPage
 	},
 	{
 		path: "*",

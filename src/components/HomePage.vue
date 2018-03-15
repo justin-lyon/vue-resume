@@ -52,7 +52,7 @@ export default {
 				},
 				{
 					title: "Interests", summary: "Justin is interested in stuff.",
-					image: "soccer.jpeg", to: "/"
+					image: "soccer.jpeg", to: "/interests"
 				}
 			]
 		};
