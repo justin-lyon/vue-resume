@@ -41,10 +41,7 @@ export default {
 						{ name: "Vue JS", link: "https://vuejs.org/" },
 						{ name: "Material Design Components", link: "https://vuetifyjs.com/en/" },
 						{ name: "Webpack", link: "https://webpack.js.org/" },
-						{ name: "Bitbucket Pipelines", link: "https://bitbucket.org/product/features/pipelines" },
-						{ name: "nginx", link: "https://www.nginx.com/" },
-						{ name: "Ubuntu 16.04", link: "https://www.digitalocean.com/products/droplets/" },
-						{ name: "SSL", link: "https://letsencrypt.org//" }
+						{ name: "GitHub Pages", link: "https://pages.github.com/" },
 					]
 				},
 				{
@@ -98,7 +95,19 @@ export default {
 						{ name: "Salesforce", link: "https://www.salesforce.com/" },
 						{ name: "Salesforce Lightning", link: "https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm" },
 					]
-				}
+				},
+				{
+					name: "Pretty Point Buy", link: "https://pretty-point-buy.herokuapp.com/",
+					image: "dnd-ampersand.png", stack: "Node Stack",
+					summary: "A D&D 5th Edition Point Buy Calculator.",
+					description: "This started as an exercise in Vue JS, but now is a fully featured and mobile responsive Point Buy Calculator. There are many Point Buy Calculators out there, but this one is pretty.",
+					technologies: [
+						{ name: "Vue JS", link: "https://vuejs.org/" },
+						{ name: "Material Design Components", link: "https://vuetifyjs.com/en/" },
+						{ name: "Webpack", link: "https://webpack.js.org/" },
+						{ name: "Heroku", link: "https://www.heroku.com/free" },
+					]
+				},
 			]
 		};
 	},
