@@ -1,5 +1,5 @@
 <template>
-	<v-card>
+	<v-card style="height: 100%">
 		<v-card-actions v-if="link">
 			<v-spacer></v-spacer>
 			<a :href="link" target="_blank" class="project-link">
@@ -24,7 +24,8 @@
 				{{ description }}
 			</p>
 
-			<app-video
+			<app-video v-if="video"
+				:title="video.title"
 				:width="video.width"
 				:height="video.height"
 				:src="video.src" ></app-video>

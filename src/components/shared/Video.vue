@@ -1,7 +1,7 @@
 <template>
 	<v-expansion-panel popout>
 		<v-expansion-panel-content>
-			<div slot="header">Video</div>
+			<div slot="header"><i>{{ title }}</i></div>
 
 			<v-layout row justify-center>
 				<v-flex>
@@ -23,6 +23,7 @@
 export default {
 	name: "Video",
 	props: [
+		"title",
 		"width",
 		"height",
 		"src"
