@@ -1,13 +1,19 @@
 <template>
 	<v-layout row wrap>
 		<v-flex xs12>
+			<div>xs:{{ $vuetify.breakpoint.xs }}</div>
+			<div>sm:{{ $vuetify.breakpoint.sm }}</div>
+			<div>md:{{ $vuetify.breakpoint.md }}</div>
+			<div>lg:{{ $vuetify.breakpoint.lg }}</div>
+			<div>xl:{{ $vuetify.breakpoint.xl }}</div>
+			<div>width{{ $vuetify.breakpoint.width }}</div>
 			<app-page-header
 				:title="title"
 				:summary="summary" ></app-page-header>
 		</v-flex>
 
 		<v-flex v-for="interest in interests" :key="interest.name"
-			xs6>
+			xs12 md6>
 
 			<app-interest
 				:name="interest.name"

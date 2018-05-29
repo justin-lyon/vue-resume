@@ -7,7 +7,7 @@
 			</a>
 		</v-card-actions>
 
-		<v-card-title primary-title>
+		<v-card-title primary-title style="min-height: 132px;">
 			<img class="pr-2"
 				:src="'assets/images/' + image"
 				:alt="image">
@@ -20,14 +20,12 @@
 
 		<v-divider></v-divider>
 		<v-card-text>
-			<p>
+			<p style="min-height: 84px;">
 				{{ description }}
 			</p>
 
 			<app-video v-if="video"
 				:title="video.title"
-				:width="video.width"
-				:height="video.height"
 				:src="video.src" ></app-video>
 		</v-card-text>
 
@@ -52,6 +50,7 @@ export default {
 </script>
 
 <style scoped>
+
 img {
 	max-width: 100px;
 }
