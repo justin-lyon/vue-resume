@@ -1,34 +1,36 @@
 <template>
-	<v-card style="height: 100%">
-		<v-card-actions v-if="link">
-			<v-spacer></v-spacer>
-			<a :href="link" target="_blank" class="project-link">
-				<v-icon color="primary">launch</v-icon>
-			</a>
-		</v-card-actions>
-
-		<v-card-title primary-title style="min-height: 132px;">
-			<img class="pr-2"
-				:src="'assets/images/' + image"
-				:alt="image">
-			<div>
-				<h3>
-					{{ name }}
-				</h3>
-			</div>
-		</v-card-title>
-
-		<v-divider></v-divider>
+	<v-card >
 		<v-card-text>
-			<p style="min-height: 84px;">
-				{{ description }}
-			</p>
 
-			<app-video v-if="video"
-				:title="video.title"
-				:src="video.src" ></app-video>
+			<v-container fluid grid-list-xs>
+				<v-layout row justify-space-between >
+					<v-flex text-xs-left>
+						<img class="pr-2"
+							:src="'assets/images/' + image"
+							:alt="image">
+					</v-flex>
+					<v-flex xs8>
+						<p >
+							{{ description }}
+						</p>
+					</v-flex>
+					<v-flex text-xs-right>
+						<a :href="link" target="_blank" class="project-link">
+							<v-icon color="primary">launch</v-icon>
+						</a>
+					</v-flex>
+				</v-layout>
+
+				<v-layout row justify-center>
+					<v-flex xs8>
+						<app-video v-if="video"
+							:title="video.title"
+							:src="video.src" ></app-video>
+					</v-flex>
+				</v-layout>
+			</v-container>
+
 		</v-card-text>
-
 	</v-card>
 </template>
 
@@ -50,7 +52,6 @@ export default {
 </script>
 
 <style scoped>
-
 img {
 	max-width: 100px;
 }
