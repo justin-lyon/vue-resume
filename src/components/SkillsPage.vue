@@ -212,7 +212,7 @@ export default {
 					types: ["DevOps"]
 				},
 				{ name: "Jenkins", mastery: 7, masteryScale: 10,
-					description: "Version Control is great. Version Control is good. BitBucket Pipelines is awesome.",
+					description: "Jenkins is a great tool to manage triggers for Continuous Integration.",
 					types: ["DevOps"]
 				},
 			]
