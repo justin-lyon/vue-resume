@@ -98,7 +98,7 @@ export default {
 				},
 				{
 					name: "Pretty Point Buy", link: "https://pretty-point-buy.herokuapp.com/",
-					image: "dnd-ampersand.png", stack: "Node Stack",
+					image: "dnd-ampersand-red.png", stack: "Node Stack",
 					summary: "A D&D 5th Edition Point Buy Calculator.",
 					description: "This started as an exercise in Vue JS, but now is a fully featured and mobile responsive Point Buy Calculator. There are many Point Buy Calculators out there, but this one is pretty.",
 					technologies: [
