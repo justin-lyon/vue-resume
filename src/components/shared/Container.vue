@@ -1,9 +1,7 @@
 <template>
 	<v-container fluid grid-list-md>
-		<v-layout row wrap>
-			<v-flex
-				xs10 offset-xs1
-				md8 offset-md2>
+		<v-layout row wrap justify-center>
+			<v-flex xs12 md8>
 
 				<slot></slot>
 			</v-flex>

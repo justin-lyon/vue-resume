@@ -2,6 +2,9 @@
 	<v-card color="indigo" dark>
 		<v-card-title primary-title>
 			<div>
+				<!-- <v-btn to="/">
+					<v-icon>keyboard_arrow_left</v-icon>
+				</v-btn> -->
 				<h3>{{ title }}</h3>
 			</div>
 		</v-card-title>

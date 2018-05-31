@@ -1,7 +1,7 @@
 <template>
-	<v-card>
-		<v-card-title primary-title>
-			<div>
+	<v-card style="height: 100%;">
+		<v-card-title primary-title >
+			<div >
 				<h3>{{ cert.name }}</h3>
 				<div>
 					<p><i>{{ cert.date }}</i></p>
@@ -27,4 +27,3 @@ export default {
 	}
 }
 </script>
-
