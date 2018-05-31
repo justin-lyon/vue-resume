@@ -133,7 +133,7 @@ export default {
 				},
 				{ name: "Lightning", mastery: 10, masteryScale: 10,
 					description: "Salesforce's Javascript Framework. This is how I got thrown into the deep end of Javascript.",
-					types: ["Javascript", "Salesforce"]
+					types: ["Javascript", "Salesforce", "Front-end"]
 				},
 				{ name: "Apex", mastery: 10, masteryScale: 10,
 					description: "When you are a Salesforce Developer, this is the first thing you learn. Salesforce's backend language based on Java JDK 6.",
@@ -141,7 +141,7 @@ export default {
 				},
 				{ name: "SOQL", mastery: 10, masteryScale: 10,
 					description: "This is Salesforce's proprietary query language. It's very similar to SQL, but has its own limitations.",
-					types: ["Salesforce", "Server"]
+					types: ["Salesforce", "Database"]
 				},
 				{ name: "Visualforce", mastery: 9, masteryScale: 10,
 					description: "Visualforce is a classic MVC templating framework, akin to JSPs.",
@@ -176,11 +176,11 @@ export default {
 					types: ["Database"]
 				},
 				{ name: "MySQL", mastery: 7, masteryScale: 10,
-					description: "This is his JS SPA Framework of Choice. Though he can be dangerous with Angular and React as well.",
+					description: "This is a common relationship database.",
 					types: ["Database"]
 				},
 				{ name: "SQL", mastery: 7, masteryScale: 10,
-					description: "This is his JS SPA Framework of Choice. Though he can be dangerous with Angular and React as well.",
+					description: "Structured Query Language. A common language for querying data.",
 					types: ["Database"]
 				},
 				{ name: "Cooking", mastery: 2, masteryScale: 10,
