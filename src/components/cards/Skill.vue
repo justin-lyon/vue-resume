@@ -13,8 +13,14 @@
 		</v-card-title>
 		<v-divider></v-divider>
 		<v-card-text>
-			<p>
-				{{ description }}
+			<v-layout row wrap justify-center text-xs-center >
+				<v-flex v-for="type in types" :key="type">
+					<v-chip color="indigo" class="white--text">{{ type }}</v-chip>
+				</v-flex>
+			</v-layout>
+
+			<p class="pt-2">
+				<i>{{ description }}</i>
 			</p>
 		</v-card-text>
 	</v-card>
@@ -27,7 +33,8 @@ export default {
 		"name",
 		"description",
 		"mastery",
-		"scale"
+		"scale",
+		"types"
 	],
 	computed: {
 		percentageMastery() {
