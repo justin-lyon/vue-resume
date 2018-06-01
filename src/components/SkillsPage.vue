@@ -110,18 +110,19 @@ export default {
 			],
 			selectedCategories: [],
 			categoryOptions: [
+				{ text: "CRM", value: "CRM"},
+				{ text: "Database", value: "Database"},
+				{ text: "DevOps", value: "DevOps"},
+				{ text: "Front-end" , value: "Front-end"},
 				{ text: "Javascript", value: "Javascript"},
 				{ text: "Salesforce", value: "Salesforce"},
 				{ text: "Server", value: "Server"},
-				{ text: "DevOps", value: "DevOps"},
-				{ text: "Front-end" , value: "Front-end"},
-				{ text: "Database", value: "Database"},
 				{ text: "Other", value: "Other"},
 			],
 			skills: [
 				{ name: "Javascript", mastery: 9, masteryScale: 10,
 					description: "I've found a great deal of enjoyment learning the ins and outs of ECMAScript over the past two years.",
-					types: ["Javascript"]
+					types: ["Javascript", "Front-end", "Server"]
 				},
 				{ name: "Node JS", mastery: 8, masteryScale: 10,
 					description: "Node has been a fantastic experience building full stack applications in Javascript.",
@@ -129,11 +130,11 @@ export default {
 				},
 				{ name: "Salesforce", mastery: 10, masteryScale: 10,
 					description: "Since 2014, I've been employed as a consultant developer - building on the Salesforce CRM Platform.",
-					types: ["Salesforce"]
+					types: ["Salesforce", "CRM"]
 				},
 				{ name: "Lightning", mastery: 10, masteryScale: 10,
 					description: "Salesforce's Javascript Framework. This is how I got thrown into the deep end of Javascript.",
-					types: ["Javascript", "Salesforce"]
+					types: ["Javascript", "Salesforce", "Front-end"]
 				},
 				{ name: "Apex", mastery: 10, masteryScale: 10,
 					description: "When you are a Salesforce Developer, this is the first thing you learn. Salesforce's backend language based on Java JDK 6.",
@@ -141,7 +142,7 @@ export default {
 				},
 				{ name: "SOQL", mastery: 10, masteryScale: 10,
 					description: "This is Salesforce's proprietary query language. It's very similar to SQL, but has its own limitations.",
-					types: ["Salesforce", "Server"]
+					types: ["Salesforce", "Database"]
 				},
 				{ name: "Visualforce", mastery: 9, masteryScale: 10,
 					description: "Visualforce is a classic MVC templating framework, akin to JSPs.",
@@ -153,11 +154,11 @@ export default {
 				},
 				{ name: "NGINX", mastery: 7, masteryScale: 10,
 					description: "This is a web server. I use it to configure my DNS configurations to a Node Process - exposing a local host express server to the www for example.",
-					types: ["DevOps"]
+					types: ["DevOps", "Server"]
 				},
 				{ name: "Linux", mastery: 6, masteryScale: 10,
 					description: "My web server runs on Ubuntu 16.04.",
-					types: ["DevOps"]
+					types: ["DevOps", "Server"]
 				},
 				{ name: "Vue JS", mastery: 9, masteryScale: 10,
 					description: "This is my JS SPA Framework of Choice. Though I can be dangerous with Angular and React as well.",
@@ -176,11 +177,11 @@ export default {
 					types: ["Database"]
 				},
 				{ name: "MySQL", mastery: 7, masteryScale: 10,
-					description: "This is his JS SPA Framework of Choice. Though he can be dangerous with Angular and React as well.",
+					description: "This is a common relationship database.",
 					types: ["Database"]
 				},
 				{ name: "SQL", mastery: 7, masteryScale: 10,
-					description: "This is his JS SPA Framework of Choice. Though he can be dangerous with Angular and React as well.",
+					description: "Structured Query Language. A common language for querying data.",
 					types: ["Database"]
 				},
 				{ name: "Cooking", mastery: 2, masteryScale: 10,
@@ -212,7 +213,7 @@ export default {
 					types: ["DevOps"]
 				},
 				{ name: "Jenkins", mastery: 7, masteryScale: 10,
-					description: "Version Control is great. Version Control is good. BitBucket Pipelines is awesome.",
+					description: "Jenkins is a great tool to manage triggers for Continuous Integration.",
 					types: ["DevOps"]
 				},
 			]
