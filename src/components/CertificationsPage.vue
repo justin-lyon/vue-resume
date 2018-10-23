@@ -40,13 +40,13 @@ export default {
 			link: "http://certification.salesforce.com/certification-detail-print?conId=003G0000025uu3HIAQ",
 			certifications: [
 				{ name: "Salesforce Certified Platform App Builder",
-					date: "Mar 2017 - Present",
+					date: "Mar 2017 - Nov 2017",
 					description: "The Salesforce Certified Platform App Builder credential is designed for those who can demonstrate skills and knowledge in designing, building, and implementing custom applications using the declarative customization capabilities of the Force.com platform." },
 				{ name: "Salesforce Certified Platform Developer I",
 					date: "Feb 2017 - Present",
 					description: "The Salesforce Certified Platform Developer I credential is designed for those who have knowledge, skills, and experience building custom declarative and programmatic applications on the Force.com platform." },
 				{ name: "Salesforce Certified Administrator",
-					date: "Jan 2017 - Present",
+					date: "Jan 2017 - Nov 2017",
 					description: "The Salesforce Certified Administrator credential is designed for those who have experience as a Salesforce Administrator. Candidates should possess broad knowledge of Salesforce applications, regularly configure and manage Salesforce, and continuously look for ways their companies can get even more from additional features and capabilities." },
 			]
 		};
