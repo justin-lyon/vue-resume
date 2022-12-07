@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm uninstall -dev"
   },
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "vue": "^2.5.11",
     "vue-router": "^3.0.1",
     "vuelidate": "^0.6.1",
